@@ -1,0 +1,532 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25726566040345dc9a3569de00f443f, type: 3}
+  m_Name: Photo Wall
+  m_EditorClassIdentifier: 
+  _ratio: 1
+  textures:
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.68175983, g: 0.5899541, b: 0.55061734, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.4189052, g: 0.3892423, b: 0.40030348, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.0625
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.8057871, g: 0.6651075, b: 0.5375802, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.125
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.21812363, g: 0.155753, b: 0.1309913, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.47020695, g: 0.32703948, b: 0.19712539, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.25
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5994222, g: 0.10652997, b: 0.124700464, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.3125
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.038071863, g: 0.19675022, b: 0.35255387, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.375
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.15468712, g: 0.11924173, b: 0.104808174, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.4375
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.21928099, g: 0.21568626, b: 0.22419511, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5535705, g: 0.030488988, b: 0.028068267, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5625
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.52036357, g: 0.51776963, b: 0.5030229, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.625
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5237201, g: 0.35762528, b: 0.24526146, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.34055012, g: 0.37792757, b: 0.41610155, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.75
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.2924655, g: 0.29431126, b: 0.4553861, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.8125
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.73467827, g: 0.57551134, b: 0.612627, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.875
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.6589081, g: 0.5326857, b: 0.31106865, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.6426166, g: 0.565311, b: 0.48333332, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.6201526, g: 0.53997827, b: 0.44299206, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.0625
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.4648148, g: 0.38965145, b: 0.33692813, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.125
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.7752444, g: 0.621835, b: 0.6192577, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.37329343, g: 0.18907043, b: 0.089687705, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.25
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.328861, g: 0.23157829, b: 0.17953661, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.3125
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.74801207, g: 0.6912612, b: 0.72046113, a: 0.6792226}
+    uvRect:
+      serializedVersion: 2
+      x: 0.375
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5814814, g: 0.6152506, b: 0.6181918, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.4375
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.66460073, g: 0.6517035, b: 0.62825805, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.46585572, g: 0.460058, b: 0.42740253, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5625
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.47934157, g: 0.55366135, b: 0.5444249, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.625
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.6175897, g: 0.54309267, b: 0.5280245, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.25854522, g: 0.44508594, b: 0.5027475, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.75
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.32204157, g: 0.3726331, b: 0.40596646, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.8125
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.552929, g: 0.57144743, b: 0.5800774, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.44455323, g: 0.44063166, b: 0.42113268, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.0625
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.35434523, g: 0.39975798, b: 0.17404984, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.17214659, g: 0.15307736, b: 0.14681374, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.0625
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.26285407, g: 0.28867105, b: 0.35228756, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.125
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.43536946, g: 0.31619215, b: 0.26123497, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.759974, g: 0.7711085, b: 0.7909018, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.25
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.53499985, g: 0.57223827, b: 0.46501392, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.3125
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.39736736, g: 0.55966157, b: 0.5031317, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.375
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.62608916, g: 0.59945524, b: 0.5799291, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.4375
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.62195, g: 0.56559545, b: 0.4962599, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.278262, g: 0.36435494, b: 0.49618733, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5625
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.8269181, g: 0.69009906, b: 0.67138696, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.625
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.52429193, g: 0.4836601, b: 0.41481483, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.64808774, g: 0.6482449, b: 0.6646936, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.75
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.775, g: 0.50839984, b: 0.48454365, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.8125
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.41370076, g: 0.3625192, b: 0.31739232, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.7389024, g: 0.62355673, b: 0.5212691, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.125
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.7214463, g: 0.6263816, b: 0.47805628, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.73104584, g: 0.65225136, b: 0.5648875, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.0625
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.45526505, g: 0.3855967, b: 0.31393126, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.125
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.35247824, g: 0.22775057, b: 0.1342048, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.1875
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.67211354, g: 0.6317963, b: 0.60918677, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.25
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.598148, g: 0.664645, b: 0.32126582, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.3125
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.7301562, g: 0.6361957, b: 0.62464887, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.375
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.4756128, g: 0.40439817, b: 0.33204663, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.4375
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.45274988, g: 0.37139547, b: 0.34917545, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5481241, g: 0.5545027, b: 0.54590917, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.5625
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.60590273, g: 0.49251768, b: 0.41753805, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.625
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.547549, g: 0.49928522, b: 0.45052427, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.6875
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.61179197, g: 0.4834083, b: 0.32343403, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.75
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.5321714, g: 0.49962473, b: 0.4888284, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.8125
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.6812695, g: 0.6332968, b: 0.56158894, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.875
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  - texture: {fileID: 2800000, guid: 59c25e000274d493a99884433f9990d5, type: 3}
+    color: {r: 0.44023243, g: 0.39811188, b: 0.23641975, a: 1}
+    uvRect:
+      serializedVersion: 2
+      x: 0.9375
+      y: 0.1875
+      width: 0.0625
+      height: 0.0625
+  cache: {fileID: 0}
+  cache2D: {fileID: 2800000, guid: 635a82a0dae90ba41b4dd9ae2038b28e, type: 3}
+  indexMap: {fileID: 0}
+  useCache: 1

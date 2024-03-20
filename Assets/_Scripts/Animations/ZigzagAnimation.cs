@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+
+public class ZigzagAnimation : Animation, IAnimation
+{
+	public CanvasGroup canvasGroup;
+
+	private void Awake()
+	{
+		PhotoWallEvents.OnInitPhotoAdded += ProcessImages;
+		PhotoWallEvents.OnPhotoLoaded += ProcessImages;
+		PhotoWallEvents.OnPhotoDeleted += RemoveImage;
+	}
+	
+	private void OnDestroy()
+	{
+		PhotoWallEvents.OnInitPhotoAdded -= ProcessImages;
+		PhotoWallEvents.OnPhotoLoaded -= ProcessImages;
+		PhotoWallEvents.OnPhotoDeleted -= RemoveImage;
+	}
+	
+	private void Start()
+	{
+		api = APIManager.Instance;
+		manager = PhotoWallManager.Instance;
+	}
+	
+	public void Activate()
+	{
+		IsPlaying = !IsPlaying;
+
+		switch (IsPlaying)
+		{
+			case true:
+				canvasGroup.DOFade(1f, 0.3f);
+				StartAnimation();
+				break;
+			case false:
+				canvasGroup.DOFade(0f, 0.3f);
+				StopAnimation();
+				break;
+		}
+	}
+	public void Hide()
+	{
+		this.canvasGroup.alpha = 0;
+	}
+	
+	public void StartAnimation()
+	{
+		
+	}
+	
+	public void StopAnimation()
+	{
+		
+	}
+	
+	public override void ProcessImages(Picture photo)
+	{
+		
+	}
+
+	public override void RemoveImage(string id)
+	{
+		
+	}
+}
