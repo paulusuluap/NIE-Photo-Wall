@@ -89,7 +89,7 @@ public class APIManager : Configuration
 
     private void Awake()
     {
-        ConfigureSettings();
+        StartCoroutine(FetchPhotoWallConfiguration());
         Instance = this;
     }
     private void Start()
@@ -104,6 +104,14 @@ public class APIManager : Configuration
 
         //testing
         //FetchPhotoData();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            FetchAnimation();
+        }
     }
 
     private void OnEnable()
@@ -121,6 +129,20 @@ public class APIManager : Configuration
         PhotoWallEvents.OnPhotoWallReady -= FetchGalleryTypeData;
     }
 
+    IEnumerator FetchPhotoWallConfiguration()
+    {
+        ConfigureSettings();
+
+        yield return new WaitUntil (() => !string.IsNullOrEmpty(baseUrl));
+
+        RestClient.Get<APIAnimation>(baseUrl + customSettingEndpoint + $"?key=" + Constants.PHOTO_WALL_CONFIGURATION).Then(
+            response =>
+            {
+                print(response.data.value);
+                ConfigurePhotoWallFromKioskSettings(response.data.value);
+            });
+    }
+
     //Base of syncing data
     private void FetchServerData()
     {
@@ -132,13 +154,13 @@ public class APIManager : Configuration
             });
     }
 
-    int anim;
     //Fetch playing animation set on web portal
     private void FetchAnimation()
     {
         RestClient.Get<APIAnimation>(baseUrl + customSettingEndpoint + $"?key=" + Constants.PHOTO_WALL_ANIMATION).Then(
             response =>
             {
+                print(response.data.value);
                 //set animation
                 if (manager.AnimationIndex.ToString() != response.data.value && Int32.Parse(response.data.value) <= manager.animationCollections.Count-1)
                 {

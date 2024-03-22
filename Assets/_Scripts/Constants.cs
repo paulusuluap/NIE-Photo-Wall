@@ -9,6 +9,7 @@ public class Constants : MonoBehaviour
     public const string PHOTO_WALL_GALLERY_TYPE = "PHOTO_WALL_GALLERY_TYPE";
     public const string PHOTO_WALL_BANNER_CAPTION = "PHOTO_WALL_BANNER_CAPTION";
     public const string PHOTO_WALL_LARGE_PICTURE_DURATION = "PHOTO_WALL_LARGE_PICTURE_DURATION";
+    public const string PHOTO_WALL_CONFIGURATION = "PHOTO_WALL_CONFIGURATION";
 
     public const int MAXSIZE_4X2 = 8;
     public const int MAXSIZE_4X3 = 12;
