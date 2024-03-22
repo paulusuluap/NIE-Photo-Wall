@@ -7,13 +7,5 @@
     "galleryConfig": {
         "repeatRate": 5.0,
         "quality": 0
-    },
-    "scrollAnimationConfig": {
-        "topBottom_horizontalSpeed": 60.0,
-        "middle_horizontalSpeed": 50.0,
-        "verticalSpeed": 110.0,
-        "filmStrip_middle_horizontalSpeed": 90.0,
-        "filmStrip_topBottom_horizontalSpeed": 100.0,
-        "filmStrip_verticalSpeed": 110.0
     }
 }

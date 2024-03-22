@@ -77,9 +77,6 @@ public class Configuration : MonoBehaviour
 
     public void ConfigurePhotoWallFromKioskSettings(string response)
     {
-        //string configFileTxt = File.ReadAllText(Application.streamingAssetsPath + "/config.json");
-        //photoWallConfig = JsonUtility.FromJson<PhotoWallConfig>(configFileTxt);
-
         photoWallConfig = JsonUtility.FromJson<PhotoWallConfig>(response);
 
         baseUrl = photoWallConfig.baseUrl;
@@ -117,20 +114,6 @@ public class Configuration : MonoBehaviour
         maxPhotos = photoWallConfig.maxPhotos;
         galleryRepeatRate = photoWallConfig.galleryConfig.repeatRate;
         quality = photoWallConfig.galleryConfig.quality;
-
-        //GlobalVariable.topBottom_horizontalSpeed = photoWallConfig.scrollAnimationConfig.topBottom_horizontalSpeed;
-        //GlobalVariable.middle_horizontalSpeed = photoWallConfig.scrollAnimationConfig.middle_horizontalSpeed;
-        //GlobalVariable.verticalSpeed = photoWallConfig.scrollAnimationConfig.verticalSpeed;
-        //GlobalVariable.filmStrip_middle_horizontalSpeed = photoWallConfig.scrollAnimationConfig.filmStrip_middle_horizontalSpeed;
-        //GlobalVariable.filmStrip_topBottom_horizontalSpeed = photoWallConfig.scrollAnimationConfig.filmStrip_topBottom_horizontalSpeed;
-        //GlobalVariable.filmStrip_verticalSpeed = photoWallConfig.scrollAnimationConfig.filmStrip_verticalSpeed;
-
-        //print($"topBot_hor : {GlobalVariable.topBottom_horizontalSpeed} \n" +
-        //    $"middle_hor : {GlobalVariable.middle_horizontalSpeed} \n" +
-        //    $"verti : {GlobalVariable.verticalSpeed} \n" +
-        //    $"film_middle_hor : {GlobalVariable.filmStrip_middle_horizontalSpeed} \n" +
-        //    $"film_topBot_hor : {GlobalVariable.filmStrip_topBottom_horizontalSpeed} \n" +
-        //    $"film_verti : {GlobalVariable.filmStrip_verticalSpeed}");
     }
 
     public virtual void ConfigureSettingsOnKiosk() { }
