@@ -138,7 +138,7 @@ public class APIManager : Configuration
         RestClient.Get<APIAnimation>(baseUrl + customSettingEndpoint + $"?key=" + Constants.PHOTO_WALL_CONFIGURATION).Then(
             response =>
             {
-                print(response.data.value);
+                //print(response.data.value);
                 ConfigurePhotoWallFromKioskSettings(response.data.value);
             });
     }
