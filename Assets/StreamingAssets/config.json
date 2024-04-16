@@ -3,7 +3,7 @@
     "listEndpoint": "/api/public-gallery/photos/",
     "photoEndpoint": "/upload/gallery/",
     "gallery_id": "652e11b09aff88f664db4122",
-    "maxPhotos": -1,
+    "maxPhotos": 20,
     "galleryConfig": {
         "repeatRate": 5.0,
         "quality": 0
